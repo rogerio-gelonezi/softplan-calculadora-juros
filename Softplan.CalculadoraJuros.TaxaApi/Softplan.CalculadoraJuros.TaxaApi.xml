@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Softplan.CalculadoraJuros.TaxaApi</name>
+    </assembly>
+    <members>
+        <member name="M:Softplan.CalculadoraJuros.TaxaApi.Controllers.TaxaJurosController.RetornaTaxaJuros">
+            <summary>
+            Retorna o valor multiplicado da taxa de juros aplicada atualmente
+            </summary>
+            <response code="200">Ok</response>
+        </member>
+    </members>
+</doc>

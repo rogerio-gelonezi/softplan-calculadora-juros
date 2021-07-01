@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Softplan.CalculadoraJuros.CalculadoraApi</name>
+    </assembly>
+    <members>
+        <member name="M:Softplan.CalculadoraJuros.CalculadoraApi.Controllers.CalculaJurosController.CalculaJurosGet(System.Double,System.Int32)">
+            <summary>
+            Calcula o valor final com o juros aplicado em um valor sobre os meses
+            </summary>
+            <param name="valorInicial"></param>
+            <param name="meses"></param>
+            <response code="200">Ok</response>
+            <response code="400">Bad Request</response>
+            <response code="500">Internal Error</response>
+        </member>
+        <member name="M:Softplan.CalculadoraJuros.CalculadoraApi.Controllers.ShowMeTheCodeController.UrlRepositorioGitHubGet">
+            <summary>
+            Retorna a url do Git Hub
+            </summary>
+            <response code="200">Ok</response>
+        </member>
+    </members>
+</doc>

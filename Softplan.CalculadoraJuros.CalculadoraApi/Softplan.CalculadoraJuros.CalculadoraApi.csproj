@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>8d292bc8-5b49-4288-a71b-aac77cc523ad</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Projetos\Softplan\Softplan.CalculadoraJuros\Softplan.CalculadoraJuros.CalculadoraApi\Softplan.CalculadoraJuros.CalculadoraApi.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.13" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Softplan.CalculadoraJuros.Handlers\Softplan.CalculadoraJuros.Handlers.csproj" />
+    <ProjectReference Include="..\Softplan.CalculadoraJuros.Models\Softplan.CalculadoraJuros.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Softplan.CalculadoraJuros.CalculadoraApi.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
